@@ -1,0 +1,41 @@
+{
+	"compileOnSave": true,
+	"compilerOptions": {
+		"plugins": [
+			{
+				"name": "@fimbul/mithotyn",
+				"displayErrorsAsWarnings": true
+			}
+		],
+
+		// To enable Babel support
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"isolatedModules": true,
+
+		"noEmit": true,
+		"declaration": false,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"noEmitOnError": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"outDir": "build/",
+		"removeComments": false,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"sourceMap": true,
+		"inlineSourceMap": false,
+		"stripInternal": true,
+		"target": "es2017",
+		"skipLibCheck": true,
+		"strictNullChecks": true,
+		"strictPropertyInitialization": true,
+		"strictBindCallApply": true,
+		"watch": false, // true breaks circleci
+		"pretty": true,
+		"types": ["jest-extended"]
+	},
+	"include": ["src/**/*.ts", "maintenance/**/*.ts", "test/**/*.ts"],
+	"exclude": ["build/**", "node_modules/**"]
+}
